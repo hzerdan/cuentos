@@ -52,11 +52,9 @@ directamente puede fallar. Usar `preview_start` con `{"name": "static"}`.
 
 ## Convenciones al trabajar en este proyecto
 
-- No hacer commit ni push sin confirmación explícita del usuario en el chat,
-  aunque ya haya aprobado publicaciones anteriores — cada push dispara un
-  deploy real en Vercel.
-- Descargar archivos (como thumbnails de YouTube) requiere permiso explícito
-  del usuario antes de bajarlos, aunque sea contenido público.
+(Las reglas generales de confirmación antes de pushear/descargar están en el
+CLAUDE.md global del usuario — acá solo lo específico de este repo.)
+
 - Antes de dar un cambio visual por terminado, previsualizarlo en el Browser
   pane (no asumir que el HTML/CSS quedó bien solo por haber editado el texto).
 - El tono de los textos de la página es cálido y personal (mirá la sección
