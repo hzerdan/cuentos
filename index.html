@@ -162,6 +162,34 @@
     margin-top:30px; text-align:center; color:var(--text-soft); font-size:.9rem;
   }
 
+  /* ---------- ABOUT ---------- */
+  .about{
+    background:var(--bg-raised);
+    border-radius:20px;
+    padding:38px 34px;
+    display:flex; align-items:center; gap:28px; flex-wrap:wrap;
+    box-shadow:var(--card-shadow);
+  }
+  .about-photo{
+    width:96px; height:96px; border-radius:50%;
+    object-fit:cover; flex-shrink:0;
+    border:3px solid var(--bg);
+    box-shadow:0 14px 28px -16px rgba(0,0,0,.4);
+  }
+  .about{ flex-direction:column; align-items:stretch; gap:8px; }
+  .about-block + .about-block{ margin-top:22px; padding-top:22px; border-top:1px solid var(--rule); }
+  .about-text h3{ font-family:var(--serif); font-weight:400; font-size:1.3rem; margin:0 0 8px; }
+  .about-text p{ margin:0 0 14px; color:var(--text-soft); font-size:.95rem; max-width:64ch; line-height:1.65; }
+  .about-text p:last-child{ margin-bottom:0; }
+  .about-quote{
+    margin:18px 0; padding:4px 0 4px 18px;
+    border-left:3px solid var(--accent);
+    font-family:var(--serif); font-style:italic;
+    color:var(--text); font-size:.98rem; line-height:1.7;
+    max-width:64ch;
+  }
+  .about-quote cite{ display:block; margin-top:8px; font-style:normal; font-size:.82rem; color:var(--text-soft); }
+
   /* ---------- SUPPORT ---------- */
   .support{
     background:var(--bg-raised);
@@ -197,6 +225,7 @@
     .fan-card.is-prev{ transform:rotate(-9deg) translateX(-70px); }
     .fan-card.is-next{ transform:rotate(9deg) translateX(70px); }
     .support{ padding:28px 22px; }
+    .about{ padding:28px 22px; flex-direction:column; text-align:center; }
   }
   @media (prefers-reduced-motion:reduce){
     .fan-card, .cover-img img{ transition:none; }
@@ -290,10 +319,32 @@
   </section>
 
   <section class="section" style="padding-top:0;">
+    <div class="about">
+      <div class="about-block about-text">
+        <h3>Quién cuenta</h3>
+        <p>Mi nombre es Constanza Zerdán. Soy abogada, escribana y profesora de educación musical.</p>
+        <p>Estoy casada con Bruno, y soy mamá de cinco aquí y uno muy pequeño en el cielo.</p>
+        <p>Disfruto mucho de las pequeñas cosas de la vida hogareña y la maternidad, y aquí descubro algo trascendental. Estos años, en pleno homeschooling, encontramos más tiempo para compartir en familia, y la lectura en voz alta de buenos libros se ha vuelto nuestra fiel compañía.</p>
+      </div>
+      <div class="about-block about-text">
+        <h3>Por qué lo hago</h3>
+        <p>John Senior (1923-1999) en <em>La restauración de la cultura cristiana</em> sostiene que la clase más importante de música, en sentido amplio, es la música de las palabras: la poesía y la literatura. Debemos poner nuestro mayor esfuerzo en restaurar la lectura en la casa y, sobre todo, la lectura en voz alta: junto al fuego del hogar en invierno y en el porche, en las noches de verano.</p>
+        <blockquote class="about-quote">
+          (…) Leer lo que podemos llamar los &laquo;mil buenos libros&raquo;, que tienen que estar en toda biblioteca, cuentos como los de Mamá Ganso y poemas como los de William Shakespeare para los niños y para los adolescentes, que todos hemos leído y releemos durante el resto de nuestras vidas.
+          <br><br>
+          De este modo crecerán en nuestros hogares &laquo;las caricias de una dulce armonía&raquo;, a fin de que nuestros hijos crezcan (…) con música en sus corazones, y que, cantando las viejas canciones durante toda su vida, se dispongan a escuchar un día el cántico del Bienamado: Levántate amada mía, hermosa mía, y ven.
+          <cite>John Senior, La restauración de la cultura cristiana</cite>
+        </blockquote>
+        <p>Este espacio nace de la riqueza que descubrimos con la lectura de estos cuentos clásicos. Los audiocuentos que podrán encontrar en este espacio no sustituyen la lectura propiamente dicha; sólo buscan ayudar a que estas historias se puedan escuchar en casa, cuando las manos de mamá están ocupadas, mientras disfrutamos de alguna actividad manual, o quizás en el auto, mientras viajamos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
     <div class="support">
       <div class="support-text">
         <h3>¿Te gustó lo que escuchaste?</h3>
-        <p>Por ahora esto es un regalo, sin costo. Si en algún momento querés invitarla a un café por su trabajo, esta va a ser la puerta.</p>
+        <p>Por ahora esto es un regalo, sin costo. Si en algún momento querés invitarle un café por su trabajo, esta va a ser la puerta.</p>
       </div>
       <a class="coffee-btn" href="https://cafecito.app/cotizerdan" target="_blank" rel="noopener">
         ☕ Invitale un café
@@ -303,6 +354,7 @@
 
   <footer>
     <span>Constanza Cuenta &mdash; hecho con cariño para quien quiera escuchar.</span>
+    <span>¿Dudas o sugerencias? Escribime a <a href="mailto:manere.digital@gmail.com">manere.digital@gmail.com</a></span>
     <a href="https://youtu.be/NYe-DTIsgBI?feature=shared" target="_blank" rel="noopener">Ver en YouTube ↗</a>
   </footer>
 </div>
