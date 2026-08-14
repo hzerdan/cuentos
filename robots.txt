@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://constanzacuenta.com.ar/sitemap.xml
